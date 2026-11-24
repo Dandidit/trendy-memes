@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trendy Memes — caption the hottest meme templates right now</title>
+<meta name="description" content="See today's trending meme templates and caption your own in seconds.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>🔥 Trendy Memes</h1>
+    <p>The hottest meme templates right now. Pick one, caption it, flex it.</p>
+  </header>
+
+  <main>
+    <section id="trending">
+      <h2>Trending Templates</h2>
+      <div id="grid" class="grid">Loading trending memes...</div>
+    </section>
+
+    <section id="editor" class="editor hidden">
+      <h2>Make Your Meme</h2>
+      <div class="editor-wrap">
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <div class="controls">
+          <label>Top text
+            <input id="topText" type="text" maxlength="80" placeholder="TOP TEXT">
+          </label>
+          <label>Bottom text
+            <input id="bottomText" type="text" maxlength="80" placeholder="BOTTOM TEXT">
+          </label>
+          <div class="btn-row">
+            <button id="downloadBtn">⬇ Download</button>
+            <button id="shareBtn">🐦 Share to X</button>
+            <button id="backBtn">← Pick another template</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built in a day, inspired by @levelsio's "ship fast" philosophy. Templates via Imgflip.</p>
+  </footer>
+
+<script src="app.js"></script>
+</body>
+</html>
